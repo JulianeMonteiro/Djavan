@@ -182,3 +182,92 @@ footer a {
 footer a:hover {
   color: #fff;
 }
+
+.autoplay-control {
+  display: none;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1201px) and (max-width: 1350px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+}
+
+/* Medium devices (portrait tablets and large phones, tablets, 600px and up) */
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  .container {
+    height: 60vh;
+  }
+
+  .hero h1 {
+    font-size: 80px;
+    padding-top: 30%;
+  }
+
+  .photos img {
+    height: 150px;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 280px) and (max-width: 600px) {
+  .navbar li a {
+    font-size: 16px;
+    padding-right: 20px;
+  }
+
+  .container {
+    height: 40vh;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+    padding-top: 40%;
+  }
+
+  .photos img {
+    height: 100px;
+  }
+
+  .photos_item {
+    grid-template-columns: repeat(2, 47%);
+  }
+
+  .bio h2,
+  .music h2,
+  .photos h2 {
+    font-size: 28px;
+  }
+
+  .bio h3 {
+    font-size: 20px;
+  }
+
+  .bio p {
+    font-size: 16px;
+    line-height: 1.6em;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .music h4 {
+    height: 60%;
+  }
+
+  .music .player {
+    height: 20%;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+
+  footer h4 {
+    font-size: 16px;
+  }
+}
