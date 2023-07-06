@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fffff2;
+  font-family: "Cormorant Infant", serif;
+  /* background-image: url("https://www.transparenttextures.com/patterns/dark-stripes.png");*/
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #aaa38a;
+  z-index: 99;
+}
+
+.navbar {
+  display: flex;
+  justify-content: end;
+  list-style: none;
+}
+
+.navbar li {
+  padding: 15px 0;
+}
+
+.navbar li a {
+  font-size: 20px;
+  padding-right: 100px;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar li a:hover {
+  color: #fff;
+}
+
+.hero {
+  box-shadow: 1px -54px 93px 1px rgb(21, 21, 3) inset;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  display: flex;
+  height: 100vh;
+  background-color: #fffff2;
+}
+
+.hero h1 {
+  color: #ddd7c5;
+  font-size: 120px;
+  padding-top: 18%;
+  width: 50%;
+  text-align: center;
+}
+
+.hero img {
+  width: 50%;
+}
+
+.hero h1,
+.bio h2 {
+  text-transform: uppercase;
+}
+
+.bio,
+.music,
+.photos {
+  margin: 80px auto;
+  padding: 30px 0;
+  width: 80%;
+  border-top: #aaa38a 2px solid;
+  z-index: 1;
+}
+
+.bio h2,
+.music h2,
+.photos h2 {
+  color: #aaa38a;
+  font-size: 40px;
+  text-align: center;
+  padding: 30px 0;
+  text-transform: uppercase;
+}
+
+.bio h3 {
+  color: #aaa38a;
+  font-size: 28px;
+  padding: 36px 0 20px;
+  text-transform: uppercase;
+}
+
+.bio p {
+  font-size: 20px;
+  line-height: 1.8em;
+}
+
+.music {
+  text-align: center;
+}
+
+.music h4 {
+  margin: 0 auto;
+  padding: 10px 0 4px 0;
+  width: 80%;
+  text-align: left;
+  font-size: 20px;
+  color: #aaa38a;
+}
+
+.music audio {
+  width: 80%;
+  background-color: #aaa38a;
+}
+
+.music .player {
+  margin: 20px 0;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #aaa38a;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+
+.photos_item {
+  display: grid;
+  grid-template-columns: repeat(4, 20.4%);
+  column-gap: 6%;
+  row-gap: 6%;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.photos h2 {
+  padding-bottom: 60px;
+}
+
+.photos img {
+  width: 100%;
+  height: 250px;
+  filter: grayscale(100);
+  transition: all ease-in-out 0.4s;
+}
+
+.photos img:hover {
+  filter: grayscale(0);
+}
+
+footer {
+  text-align: center;
+  padding: 30px 0;
+  font-size: 18px;
+  color: #dad7cf;
+  background-color: #aaa38a;
+}
+
+footer li,
+footer p,
+footer h4 {
+  padding: 5px;
+}
+
+footer h4 {
+  font-size: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ddd7c5;
+}
+
+footer a:hover {
+  color: #fff;
+}
